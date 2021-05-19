@@ -10,7 +10,7 @@ export class CarsController {
         let template = ''
         ProxyState.cars.forEach(car =>{
             template += /*html */`
-            <div class="col-lg-4 listing my-3">
+            <div class="col-lg-4 listings my-3">
                 <div class="card">
                     <div> 
                         <img src="${car.img}" height="200" /> 

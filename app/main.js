@@ -1,4 +1,5 @@
 import { CarsController } from "./Controllers/CarsController.js"
+import {HousesController} from "./Controllers/HousesController.js"
 class App {
 
   // constructor(){
@@ -6,7 +7,7 @@ class App {
   // }
 
   carsController = new CarsController()
-
+  HousesController = new HousesController()
 }
 
 const app = new App();
