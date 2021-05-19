@@ -11,7 +11,7 @@ export class HousesController{
         let template = ''
         ProxyState.houses.forEach(house => {
             template += /*html*/`
-            <div class="col-lg-4 listing my-3">
+            <div class="col-lg-4 hs-list my-3">
                 <div class="card">
                     <div>
                         <img src="${house.img}"height="200" />
@@ -28,27 +28,27 @@ export class HousesController{
     </div>
     `
         });
-        document.getElementById('listings').innerHTML = template
+        document.getElementById('hs-list').innerHTML = template
         
     }
-}
-addHouse(event){
-    event.preventDefault()
-    console.log(event)
-    let form = event.target
-    let formData = {
-        city: form.city.value,
-        acres: form.acres.value,
-        price: form.price.value,
-        rooms: form.rooms.value,
-        img: form.img.value
+    addHouse(event){
+        event.preventDefault()
+        console.log(event)
+        let form = event.target
+        let formData = {
+            city: form.city.value,
+            acres: form.acres.value,
+            price: form.price.value,
+            rooms: form.rooms.value,
+            img: form.img.value
+        }
+        console.log(formData)
+        housesService.addHouse(formData)
+        form.reset()
+        this.toggleForm()
     }
-    console.log(formData)
-    housesService.addHouse(formData)
-    form.reset()
-    this.toggleForm()
-}
-
-toggleForm(){
-    document.getElementById('house-form').classList.toggle('d-none')
+    
+    toggleForm(){
+        document.getElementById('house-form').classList.toggle('d-none')
+    }
 }

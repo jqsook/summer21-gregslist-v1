@@ -9,12 +9,12 @@ class AppState extends EventEmitter {
 
   /** @type {Car[]} */
   cars = [
-    new Car("Honda", "Accord", 10000, "rusty", 500, "//placehold.it/500x500")
+    new Car("TVR", "Sagaris", 1000, "Blue", 50000, "https://cdn.carbuzz.com/gallery-images/840x560/634000/200/634255.jpg")
   ]
   
   /** @type {House[]} */
   houses = [
-    new House("Emmett", 150, 5,000,000, 10, "https://assets.site-static.com/userFiles/685/image/luxury_report_photo.png")
+    new House("Emmett", 150, 5000000, 10, "https://assets.site-static.com/userFiles/685/image/luxury_report_photo.png")
   ]
 }
   
