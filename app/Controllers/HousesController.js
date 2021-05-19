@@ -1,12 +1,11 @@
 import { ProxyState } from "../AppState";
 import { housesService} from "../Services/HousesService.js"
 
-export class HousesController{
+export class housesController{
     constructor(){
         ProxyState.on('houses', this.drawHouses)
         
     }
-
     drawHouses() {
         let template = ''
         ProxyState.houses.forEach(house => {

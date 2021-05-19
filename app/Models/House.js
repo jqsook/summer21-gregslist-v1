@@ -1,5 +1,5 @@
 export class House{
-    constructor(city, acres, shop, rooms, img) {
+    constructor(city, acres, price, rooms, img) {
         this.city = city
         this.acres = acres
         this.price = price  
