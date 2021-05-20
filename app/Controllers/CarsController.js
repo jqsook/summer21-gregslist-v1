@@ -4,7 +4,7 @@ import { carsService } from "../Services/CarsService.js";
 export class CarsController {
     constructor(){
         ProxyState.on('cars', this.drawCars)
-        this.drawCars()
+        // this.drawCars()
     }
     drawCars(){
         let template = ''
@@ -25,6 +25,14 @@ export class CarsController {
                     </div>
                 </div>
             </div>
+
+              <div class="row mb-5">
+          <div class="col-12">
+            <button class="fab" onclick="app.carsController.toggleForm()">
+              +
+            </button>
+          </div>
+          
             `
         })
         document.getElementById('listings').innerHTML = template

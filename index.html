@@ -65,12 +65,12 @@
         <div class="row" id="listings"></div>
 
         <!-- The FAB button for form toggle  Need to setup to swap each form-->
-        <div class="row mb-5">
+        <!-- <div class="row mb-5">
           <div class="col-12">
             <button class="fab" onclick="app.carsController.toggleForm()">
               +
             </button>
-          </div>
+          </div> -->
           <!-- The Cars Form -->
           <div class="col-lg-8 m-auto">
             <form
@@ -136,7 +136,7 @@
                   id="img"
                 />
               </div>
-              <button type="submit">submit form</button>
+              <button type="submit" onclick="toggleForm()">submit form</button>
             </form>
           </div>
         </div>
@@ -195,14 +195,14 @@
                 id="img"
               />
             </div>
-            <button type="submit">Submit Form</button>
+            <button type="submit" onclick="toggleForm()">Submit Form</button>
           </form>
         </div>
         <!-- Jobs Form Section -->
         <div class="col-lg-8">
           <form
             class="card p-3 shadow d-none"
-            id="house-form"
+            id="job-form"
             onsubmit="app.JobsController.addJob(event)"
           >
             <div class="from-group">
@@ -253,7 +253,7 @@
                 id="img"
               />
             </div>
-            <button type="submit">Submit Form</button>
+            <button type="submit" onclick="toggleForm()">Submit Form</button>
           </form>
         </div>
       </div>

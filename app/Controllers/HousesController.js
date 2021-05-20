@@ -26,6 +26,13 @@ export class HousesController{
             </div>
         </div>
     </div>
+  <div class="row mb-5">
+          <div class="col-12">
+            <button class="fab" onclick="app.HousesController.toggleForm()">
+              +
+            </button>
+          </div>
+
     `
         })
         document.getElementById('listings').innerHTML = template
