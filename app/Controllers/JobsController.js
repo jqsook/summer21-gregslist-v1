@@ -4,7 +4,7 @@ import { jobsService } from "../Services/JobsService.js"
 export class JobsController{
     constructor() {
         ProxyState.on('jobs', this.drawJobs)
-        this.drawJobs()
+        // this.drawJobs()  This draws the card to the page on-load
     }
 
     drawJobs() {
@@ -12,7 +12,7 @@ export class JobsController{
         ProxyState.jobs.forEach(job => {
             template += /*html*/`
             <div class"col-lg-4 listings my-3">
-                <div class="card">
+                <div class="card p-4">
                     <div>
                     <img src="${job.img}
                     "height="200"/>

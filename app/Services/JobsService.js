@@ -1,9 +1,9 @@
-import { ProxyState } from "..Appstate.js";
+import { ProxyState } from "../Appstate.js";
 import { Job } from "../Models/Job.js";
 
 class JobsService{
     addJob(formData) {
-        let neJob = new Job(formData.title, formData.pay, formData.hours, formData.duty, formData.img)
+        let newJob = new Job(formData.title, formData.pay, formData.hours, formData.duty, formData.img)
         ProxyState.jobs.unshift(newJob)
     }
 }

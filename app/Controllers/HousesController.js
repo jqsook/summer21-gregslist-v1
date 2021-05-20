@@ -4,7 +4,7 @@ import { housesService} from "../Services/HousesService.js"
 export class HousesController{
     constructor(){
         ProxyState.on('houses', this.drawHouses)
-        this.drawHouses()
+        // this.drawHouses() Ill probalby only have the cars load from the get go then add on-load as needed.
         
     }
     drawHouses() {
